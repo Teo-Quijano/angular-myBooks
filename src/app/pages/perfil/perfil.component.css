@@ -1,0 +1,36 @@
+
+.container {
+
+    display: flex;
+
+}
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 1rem 1rem black;
+    z-index: 1;
+    align-items: center;
+    margin-left: 5rem;
+
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 1rem 1rem black;
+    z-index: 1;
+    align-items: center;
+    margin-left: 2rem;
+
+
+}

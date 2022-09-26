@@ -1,0 +1,97 @@
+<div class="container">
+<div class="row">
+<div class="card mb-3" style="max-width: 540px;">
+      <div class="col-md-4">
+        <img src= {{miUsuario.url}} class="img-fluid rounded-start" alt="foto_perfil">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">{{miUsuario.nombre}} {{miUsuario.apellido}}</h3>
+          <p class="card-text">
+                Nombre: {{miUsuario.nombre}} <br>
+                Apellido: {{miUsuario.apellido}} <br>
+                Correo: {{miUsuario.correo}} <br>
+                Password: {{miUsuario.password}} <br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+<form class="registro">
+    <h2>Editar Datos</h2>
+    <hr>
+    <div class="mb-2">
+        <label for="reg-nombre" class="form-label">Nombre  </label>
+        <input type="text" #input1 class="form-control" id="reg-nombre">
+    </div>
+    <br>    
+    <div class="mb-2">
+        <label for="reg-apellidos" class="form-label">Apellido  </label>
+        <input type="text" #input2 class="form-control" id="reg-apellidos">
+    </div>
+    <br>
+    <div class="mb-2">
+        <label for="reg-email" class="form-label">Correo  </label>
+        <input type="email" #input3 class="form-control" id="reg-correo">
+    </div>
+    <br>
+    <div class="mb-2">
+        <label for="reg-url" class="form-label">URL  </label>
+        <input type="text" #input4 class="form-control" id="reg-url">
+    </div>
+    <br>
+    <div class="mb-2">
+        <label for="reg-password" class="form-label">Password  </label>
+        <input type="password" #input5 class="form-control" id="reg-password">
+    </div>
+    <br>
+    <div class="flex-row mt-2">
+        <button on-click=enviardatos(input1.value,input2.value,input3.value,input4.value,input5.value) class="btn btn-primary w-25">Enviar</button>
+    </div>
+</form>
+</div>
+
+
+<!-- <div class="row">
+    <form class="registro">
+        <h2>Editar Datos</h2>
+        <hr>
+        <div class="mb-2">
+            <label for="reg-nombre" class="form-label">Nombre  </label>
+            <input type="text" [(ngModel)]="miUsuario.nombre">
+        </div>
+        <br>    
+        <div class="mb-2">
+            <label for="reg-apellidos" class="form-label">Apellido  </label>
+            <input type="text" [(ngModel)]="miUsuario.apellido">
+        </div>
+        <br>
+        <div class="mb-2">
+            <label for="reg-email" class="form-label">Correo  </label>
+            <input type="email" [(ngModel)]="miUsuario.correo">
+        </div>
+        <br>
+        <div class="mb-2">
+            <label for="reg-url" class="form-label">URL  </label>
+            <input type="text" [(ngModel)]="miUsuario.url">
+        </div>
+        <br>
+        <div class="mb-2">
+            <label for="reg-password" class="form-label">Password  </label>
+            <input type="password" [(ngModel)]="miUsuario.password">
+        </div>
+    </form>
+    </div> -->
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
